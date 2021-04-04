@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/quiz_db',
+mongoose.connect('mongodb+srv://quizz:quizz@cluster0.hjqkf.mongodb.net/quizz_db?retryWrites=true&w=majority',
 { useNewUrlParser: true },
 (err)=>{
     if(!err){console.log('MongoDb conection succeeded')}
