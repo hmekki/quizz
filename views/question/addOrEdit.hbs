@@ -1,0 +1,26 @@
+<h3>{{viewTitle}}</h3>
+
+<form action="/user/admin/question" method="POST" autocomplete="off">
+    
+    <input  name="_id" value="{{question._id}}" type="hidden"/>
+     
+     <div class="form-group">
+        <label>
+           Game Name  
+        </label>
+        <input type="text" class="form-control" name="gameName" placeholder="Game Name"  value="{{question.gameName}}">
+       
+    </div>
+     
+    <div class="form-group">
+        <label>Image URL </label>
+        <input type="text" class="form-control" name="name" placeholder="Name"  value="{{question.name}}">
+        
+    </div>
+    
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+        <a class="btn btn-secondary" href="/user/admin/list/{{username}}"><i class="fa fa-list-alt"></i> View All</a>
+    </div>
+
+</form>

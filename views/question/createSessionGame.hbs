@@ -1,0 +1,27 @@
+
+
+
+<div id="divformSessionGama" style="display: {{displayDivForm}};">
+<form action="/user/client/checkQuestion" method="POST" autocomplete="off">
+    
+   
+     <input  name="gameName" value="{{question.gameName}}" type="hidden"/>
+     <div class="form-group">
+       <img src="/{{question.name}}.jpg"  width="460" height="345"/>
+    </div>
+     
+    <div class="form-group">
+        <input type="text" id="reponseUser" class="form-control" name="reponseUser" placeholder="reponseUser"/>
+     
+        
+    </div>
+    
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+    </div>
+</form>
+</div>
+<div id="divSessionGameResult" style="display: {{displayDivScore}};">
+    <h2> Votre Score : </h2>
+    <input type="range" id="scorefinal" value="{{scorefinal}}" />{{scorefinal}} %
+</div>

@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+
+
+<h3><a class="btn btn-secondary" href="/user/admin/addOrEdit/{{username}}"><i class="fa fa-plus"></i> Create New</a> Question List</h3>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Game name</th>
+            <th>Image name</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+             <td>{{this.gameName}}</td>
+            <td>{{this.name}}</td>
+           
+            <td>
+                <a href="/user/admin/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a href="/user/admin/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

@@ -1,0 +1,18 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>User Name</th>
+            <th>User Score</th>
+            <th>Date Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each listTpoScore}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.score}}</td>
+            <td>{{this.date}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
