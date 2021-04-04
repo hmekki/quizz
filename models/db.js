@@ -3,7 +3,7 @@ mongoose.connect('mongodb+srv://quizz:quizz@cluster0.hjqkf.mongodb.net/quizz_db?
 { useNewUrlParser: true },
 (err)=>{
     if(!err){console.log('MongoDb conection succeeded')}
-    else console.log('Error ');
+    else console.log('Error connection to dabase failed ! ' + err);
 });
 
 require('./question.model')
